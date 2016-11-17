@@ -67,4 +67,8 @@
   #right-content {
     color: #4c4f53;
   }
+  
+  #info-bar .ui-alert-body {
+    margin-bottom: 0;
+  }
 </style>

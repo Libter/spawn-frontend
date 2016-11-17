@@ -19,10 +19,10 @@
   </head>
 
   <body>
-    <div v-if="infoBar" id="info-bar" style="margin-bottom:0px" class="message-bar background-info">
-      <p>Uwaga, jest to tylko projekt wyglądu panelu klienta lvlup.pro 3.0, nie jest jeszcze funkcjonalny. Zapraszam do dyskusji na <a style="color:white" href="https://forum.lvlup.pro/t/projekt-nowego-panelu-klienta-v3-0/541" target="blank"><strong>forum</strong></a></p>
-      <button class="button button-green block-mobile" v-on:click="infoBar=0">Ok, rozumiem. Schowaj ten pasek</button>
-    </div>
+    <ui-alert type="warning" id="info-bar">
+      Uwaga, jest to tylko projekt wyglądu panelu klienta lvlup.pro 3.0, nie jest jeszcze funkcjonalny. 
+      Zapraszam do dyskusji na <a href="https://forum.lvlup.pro/t/projekt-nowego-panelu-klienta-v3-0/541" target="blank"><strong>forum</strong></a>
+    </ui-alert>
     <main>
       <div class="row">
         <div class="">
@@ -65,9 +65,9 @@
       </div>
     </main>
   </body>
-
-  </html>
   <script src="/static/js/keen-ui.min.js"></script>
+  </html>
+
 </template>
 
 <script>
