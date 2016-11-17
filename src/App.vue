@@ -7,12 +7,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="shortcut icon" href="ico.ico">
-    <!-- Sierra library CSS stylesheets -->
+    <!-- CSS stylesheets -->
     <link rel="stylesheet" type="text/css" media="all" href="/static/css/sierra.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/static/css/keen-ui.min.css">
     <!-- DEMO Font -->
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:400,700,300' type='text/css'>
     <!-- Font awesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Material Icons !-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
   <body>
@@ -64,7 +67,7 @@
   </body>
 
   </html>
-
+  <script src="/static/js/keen-ui.min.js"></script>
 </template>
 
 <script>

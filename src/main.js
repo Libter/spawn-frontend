@@ -13,7 +13,8 @@ import { configRouter } from './route-config'
 import App from './App'
 // import Notfound from './components/Notfound'
 
-// install router
+// install libraries
+Vue.use(require('keen-ui'));
 Vue.use(require('vue-resource'))
 Vue.use(VueRouter)
 
