@@ -50,4 +50,12 @@
 		color: black !important;
 		font-weight: bold;
 	}
+    
+    .ui-select-label-text, .ui-textbox-label-text {
+        font-weight: bold;
+    }
+    
+    .ui-select-option, .ui-select-item-text {
+        margin-bottom: 0;
+    }
 </style>

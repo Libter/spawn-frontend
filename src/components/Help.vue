@@ -20,61 +20,38 @@
   </p>
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <label class="label">Usługa</label>
-      <div class="select full-width">
-        <select>
-          <option>Wybierz</option>
-          <option>Hosting WWW ID 111</option>
-          <option>Serwer VPS ID 2</option>
-          <option>Inne</option>
-        </select>
-        <i class="fa fa-angle-down fa-2"></i>
-      </div>
+      <ui-select label="Usługa" 
+        :options="['Hosting WWW ID 111','Serwer VPS ID 2','Inne']" 
+        placeholder="Wybierz usługę"></ui-select>
     </div>
     <div class="col-xs-12 col-md-6">
-      <label class="label">Twój poziom znajomości tematu</label>
-      <div class="select full-width">
-        <select>
-          <option>Jestem nowy, zróbcie to za mnie</option>
-          <option>Wiem o co chodzi, chcę się doradzić</option>
-          <option>Prawdopodobnie wiem więcej od was</option>
-        </select>
-        <i class="fa fa-angle-down fa-2"></i>
-      </div>
+      <ui-select label="Twój poziom znajomości tematu" 
+        :options="['Jestem nowy, zróbcie to za mnie','Wiem o co chodzi, chcę się doradzić','Prawdopodobnie wiem więcej od was']" 
+        default="Jestem nowy, zróbcie to za mnie"></ui-select>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <label class="label" for="name">Temat - po tym obsługa będzie kojarzyć twoją sprawę</label>
-      <div class="input full-width">
-        <input id="name" placeholder="Np. Zmiana pakietu, serwer testowy" type="text">
-      </div>
+      <ui-textbox name="name" label="Temat - po tym obsługa będzie kojarzyć twoją sprawę" 
+        type="text" placeholder="Np. Zmiana pakietu, serwer testowy"></ui-textbox>
     </div>
     <div class="col-xs-12 col-md-6">
-      <label class="label">Priorytet i czas odpowiedzi</label>
-      <div class="select full-width">
-        <select>
-          <option>Bardzo niski - odpowiedź w 72h (mało istotne sprawy)</option>
-          <option>Niski - odpowiedź w 48h (generalne pytania)</option>
-          <option>Normalny - odpowiedź w 24h (standardowe sprawy)</option>
-          <option>Wysoki - odpowiedź w 12h - opłata 5 PLN</option>
-          <option>ASAP - tak szybko jak możliwe - opłata 20 PLN</option>
-        </select>
-        <i class="fa fa-angle-down fa-2"></i>
-      </div>
+      <ui-select label="Priorytet i czas odpowiedzi" 
+        :options="['Bardzo niski - odpowiedź w 72h (mało istotne sprawy)','Niski - odpowiedź w 48h (generalne pytania)','Normalny - odpowiedź w 24h (standardowe sprawy)','Wysoki - odpowiedź w 12h - opłata 5 PLN','ASAP - tak szybko jak możliwe - opłata 20 PLN']" 
+        default="Bardzo niski - odpowiedź w 72h (mało istotne sprawy)"></ui-select>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <label class="label" for="message">Wiadomość - pamiętaj że jeśli będziesz miły dla administracji to administracja będzie też miła dla Ciebie :)</label><!--Nie bądź cebula, ok? -->
-      <textarea class="textarea" id="message"></textarea>
+     <ui-textbox 
+       name="message" label="Wiadomość - pamiętaj że jeśli będziesz miły dla administracji to administracja będzie też miła dla Ciebie :)" 
+       :multi-line="true" placeholder="Tu zostaw wiadomość..."></ui-textbox>
     </div>
   </div>
-
-
   <div class="row">
     <div class="col-xs-12">
-      <button class="button button-green button-big block-mobile">Utwórz ticket</button>
+      <ui-button color="success">Utwórz ticket</ui-button>
     </div>
   </div>
+  <br>
 </template>
