@@ -1,24 +1,30 @@
 <style>
   @media(max-width:767px) {
     #left-menu {
-	  width: 100%;
+      width: 100%;
     }
-	
-	#right-content {
-	  width: 100%;
-	}
+
+    #right-content {
+      width: 100%;
+    }
   }
 
   @media(min-width:768px) {
     #left-menu {
       height: 100vh;
       width: 250px;
-      float: left;
+      position: fixed;
+      top: 0;
     }
     
     #right-content {
       width: calc(100% - 250px);
-      float: left;
+      margin-left: 250px;
+    }
+		
+    #info-bar {
+      width: calc(100% - 235px);
+      margin-left: 235px;
     }
 }
 
